@@ -28,7 +28,7 @@ object ServiceNetBuild extends Build {
 
   val AKKA_VERSION            = "2.3.2"
   val DISPATCH_VERSION        = "0.11.1"
-  val DNS4S_VERSION           = "0.4-SNAPSHOT"
+  val DNS4S_VERSION           = "0.4"
   val DNSJAVA_VERSION         = "2.1.6"
   val LOGBACK_VERSION         = "1.1.2"
   val PLAY_JSON_VERSION       = "2.2.3"
@@ -169,7 +169,6 @@ object ServiceNetBuild extends Build {
     scalaVersion := SCALA_VERSION,
 
     resolvers ++= Seq(
-      "Mesosphere Repo"     at "http://downloads.mesosphere.io/maven",
       "Twitter"             at "http://maven.twttr.com/",
       "Typesafe repository" at "http://repo.typesafe.com/typesafe/releases/"
     ),
